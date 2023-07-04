@@ -17,7 +17,7 @@ The order of the colors is as follows:
 ![black](https://placehold.co/15x15/000000/000000.png)
 
 ## Usage
-Here, we can see how a process is impacted by the priority. The priority values range from -20 to 19, where -20 is the **highest** priority and 19 is the **lowest**.
+Here, we can see how a process is impacted by the priority. The priority values range from -20 to 19, where -20 is the **highest** priority and 19 is the **lowest**. To change the priority of a process, we can use [`setpriority()`](https://linux.die.net/man/2/setpriority).
 
 ### Default task priority (0)
 In the first example, we make use of a task's default priority value. We can see that the jobs simply increase their counter and alter their colors in this instance. There appear to be lines moving through the terminal as well. This is because simultaneously started processes will update their colors at the same time.
