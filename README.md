@@ -22,21 +22,21 @@ Here, we can see how the scheduler is impacted by the priority. The priority val
 ### Default task priority (0)
 In the first example, we make use of a task's default priority value. We can see that the jobs simply increase their counter and alter their colors in this instance. There appear to be lines moving through the terminal as well. This is because simultaneously started processes will update their colors at the same time.
 
-![Default Priority](./media/default.gif)
+<img src="./media/default.gif" data-canonical-src="./media/default.gif" width="400" height="400" />
 
 ### Lower task priority (19)
 When we use a lower priority, we can see that the majority of the processes start in red and change at the same time (and in a different way than before). This is because the processes in the scheduler occur (relatively) infrequent, and they practically are in sync.
 
 It will eventually fall out of sync, but the initial stage is what matters.
 
-![Lower Priority](./media/lower.gif)
+<img src="./media/lower.gif" data-canonical-src="./media/lower.gif" width="400" height="400" />
 
 ### Higher task priority (-20)
 If we increase the priority to the highest possible value, we can see that the processes move from top to bottom based on color. This means that the top ones are already updating/scheduled while the bottom ones aren't. This is because they get a lot of CPU time, hence high priority.
 
 This too will eventually get out of sync.
 
-![Higher Priority](./media/higher.gif)
+<img src="./media/higher.gif" data-canonical-src="./media/higher.gif" width="400" height="400" />
 
 ## License
 SchedViz-Linux, and the project this was based on by [Moritz KLammler](http://klammler.eu/), is released under the **<u>[MIT License](https://opensource.org/licenses/MIT)</u>**. 
