@@ -41,9 +41,9 @@
 #ifndef PERIOD
 
 /* UNCOMMENT THE DESIRED PRIORITY*/
-//#define BLINKY_DEFAULT 1
+#define BLINKY_DEFAULT 1
 //#define BLINKY_LOWER 1
-#define BLINKY_HIGHER 1
+//#define BLINKY_HIGHER 1
 
 
 #ifdef BLINKY_DEFAULT
@@ -87,12 +87,10 @@ const int children_default = CHILDREN_DEFAULT;
 const int period = PERIOD;
 const int columns = COLUMNS;
 
-struct args_struct {
+typedef struct args_struct {
   int children;  /* number of child processes to fork */
   int exit;      /* if non-negative, exit immediately with this code */
-};
-
-typedef struct args_struct args_t;
+} args_t;
 
 /**
  * Parse the command line arguments.
