@@ -4,7 +4,7 @@ A visualizer for exploring the effect of priorities on the Linux scheduler
 ## Implementation
 The program starts with creating child processes using `fork()`. The number of child processes depends on what the `COLUMNS` variable is set to.
 
-Every child process initialized an incrementing counter. When the counter reaches the specific priority `PERIOD` value, the color of the terminal cells changes.
+Every child process has an incrementing counter. When the counter reaches the specific priority `PERIOD` value, the color of the terminal cells changes.
 
 The order of the colors is as follows:  
 ![red](https://placehold.co/15x15/fc0303/fc0303.png) 🠊
